@@ -1,0 +1,126 @@
+generator_switching: 1
+transmission_switching: 1
+discrete_curtailment: 1
+
+modify_p_min: 1
+p_min_percentage: 0.20
+
+time_limit: 7200
+max_iter: 300000
+min_error_rel: -1
+min_error_abs: -1
+relative_opt_gap: 0.0001
+
+FeasibilityTol: 1e-6
+
+
+number_segments_adaptive_mip: 1
+max_error_adaptive_mip: 1.0
+
+refinement_percentage: 0.75
+refinement_percentage_for_cuts: 0.075
+use_cut_instead_of_adding_point: 1
+refine_until_relaxation_solution_is_cut_off: 1
+adaptive_domain_reduction_adaptive_mip: 0
+frequency_global_optimality: 25
+big_gap_initial: 0.10
+time_limit_one_iteration: 900
+
+
+use_every_inbumbent_for_local_search: 1
+
+univariate_approximation: 1
+
+using_mckormick_in_adaptive_mip: 1
+using_thermal_limit_in_adaptive_mip: 0
+number_initial_outer_approximation_in_adaptive_mip: 32
+using_socp_in_adaptive_mip: 1
+socp_frequence_in_adaptive_mip: 25
+using_nonconvex_qp_in_adaptive_mip: 0
+
+
+
+feasibility_based_bound_tightening: 1
+bound_tightening_using_mip: 1
+
+using_mckormick_for_bound_tightening: 1
+using_thermal_limit_for_bound_tightening: 0
+number_initial_outer_approximation_bound_tightening: 0
+using_socp_for_bound_tightening: 0
+
+max_time_bound_tightening_using_mip: 600
+max_nodes_bound_tightening_using_mip: 1
+opt_gap_bound_tightening_using_mip: 0.001
+max_error_for_bound_tightening: 10
+number_segments_bound_tightening: 1
+
+
+
+max_iter_short: 0
+time_limit_short: 1500
+adaptive_mip_for_obbt: 1
+alternating_obbt: 1
+relative_gap_reduction_alternating_obbt: 0.75
+max_time_bound_tightening_using_mip_extra: 2.0
+max_nodes_bound_tightening_using_mip_extra: 1000
+opt_gap_bound_tightening_using_mip_extra: 0.001
+max_error_for_bound_tightening_extra: 1.0
+number_segments_bound_tightening_extra: 1
+use_adaptive_mip_for_bound_tightening: 1
+
+adaptive_domain_reduction_tight_mip: 0
+parallelize_tight_mip: 1
+solve_only_tight_mip: 0
+max_error_for_tight_mip: 0.1
+number_segments_tight_mip: 1
+adaptive_tight_mip: 1
+refine_adaptive_tight_mip_with_error: 1
+factor_for_adaptive_tight_mip: 64
+time_limit_tight_mip: 1200
+using_mckormick_in_tight_mip: 1
+using_thermal_limit_in_tight_mip: 0
+number_initial_outer_approximation_tight_mip: 24
+using_socp_in_tight_mip: 1
+using_nonconvex_qp_in_tight_mip: 0
+
+objective_cuts: 1
+
+using_dc_solution: 1
+dc_time_limit: 600
+dc_time_limit_one_iteration: 150
+dc_gap: 0.01
+no_good_cuts_for_dc: 1
+no_good_cuts_for_dc_iteration_number: 100
+
+try_nlp_with_binaries_on: 1
+try_intervall_middlepoint_for_nlp: 1
+try_one_nlp_without_starting_value: 1
+try_matpower_initial_value: 0
+try_tight_mip_incumbent: 1
+number_of_random_starting_values: 0
+number_of_extra_nlps: 0
+relative_stepzise_for_extra_nlps: 0.1
+
+
+gurobi_output: 1
+print_every_relaxation_solution: 0
+using_mip_start: 1
+
+encourage_discrete_var_change: 0
+factor_for_discrete_var_change: 0.5
+measure_discrete_var_change_for_every_solution: 0
+use_var_change_also_in_global_iteration: 0
+encourage_switching_in_var_change: 0
+factor_for_switching_encourage: 10
+
+no_good_cuts: 1
+aggressive_no_good_cuts: 1
+use_no_good_cuts_also_in_global_iteration: 0
+
+use_solution_pool_in_adaptive_mip_for_local_search: 0
+use_solution_pool_for_dc: 0
+max_number_of_solutions_in_pool: 100
+pool_search_mode_for_gurobi: 0
+
+fix_number_of_switched_transmissions: 0
+number_of_fixed_transmissions: 21
