@@ -1,4 +1,4 @@
-# podi
+# PODi
 Powerflow Optimization with Discrete Decisions:
 
 
