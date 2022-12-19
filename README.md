@@ -15,11 +15,13 @@ python -m podi testcases/file_name_matpower_instance.m
 
 
 Example:
+
 python -m podi testcases/nesta_case3_lmbd__api.m 
 
 option file: 'podi.opt'
 
 Folder structure:
+
 ac_opf: Code for solving the AC OPF with discrete decisions to global optimality
 minlp_gams_files: Gams files for all MINLPs (rectangular and MIQCP relaxations)
 miqcp: Code for solving the MIQCP relaxations of the AC OPF with discrete decisions to global optimality
